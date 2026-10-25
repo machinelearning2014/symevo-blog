@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://machinelearning2014.github.io/symevo-blog/</loc><priority>1.0</priority></url>
+  <url><loc>https://machinelearning2014.github.io/symevo-blog/archive/</loc><priority>0.6</priority></url>
+  <url><loc>https://machinelearning2014.github.io/symevo-blog/labels/</loc><priority>0.6</priority></url>
+  <url><loc>https://machinelearning2014.github.io/symevo-blog/about/</loc><priority>0.5</priority></url>
+  <url><loc>https://machinelearning2014.github.io/symevo-blog/posts/image-post-demo/</loc><priority>0.8</priority></url>
+  <url><loc>https://machinelearning2014.github.io/symevo-blog/posts/welcome/</loc><priority>0.8</priority></url>
+</urlset>

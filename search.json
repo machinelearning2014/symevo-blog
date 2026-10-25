@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Image post: four views of the same idea",
+    "url": "/symevo-blog/posts/image-post-demo/",
+    "summary": "A gallery post with a cover image, captions, and a click-to-zoom lightbox. The layout is deliberately closer to a photo blog than a documentation page.",
+    "labels": [
+      "design",
+      "gallery",
+      "blog"
+    ],
+    "date": "2026-10-25T11:30:00.000Z",
+    "cover": "/symevo-blog/assets/images/posts/image-post-demo/cover.svg"
+  },
+  {
+    "title": "Why an evidence gate changes the shape of an answer",
+    "url": "/symevo-blog/posts/welcome/",
+    "summary": "A verification gate is not a spell-checker at the end of a turn. It changes which claims are worth making in the first place.",
+    "labels": [
+      "verification",
+      "agents",
+      "design"
+    ],
+    "date": "2026-10-25T09:00:00.000Z",
+    "cover": "/symevo-blog/assets/images/posts/welcome/cover.svg"
+  }
+]

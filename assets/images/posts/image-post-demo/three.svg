@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Grid of squares with one highlighted cell">
+  <rect width="1200" height="900" fill="#f6f0e2"/>
+  <g fill="#0d3b38" opacity=".24">
+    <rect x="150" y="150" width="180" height="180" rx="12"/>
+    <rect x="360" y="150" width="180" height="180" rx="12"/>
+    <rect x="570" y="150" width="180" height="180" rx="12"/>
+    <rect x="780" y="150" width="180" height="180" rx="12"/>
+    <rect x="150" y="360" width="180" height="180" rx="12"/>
+    <rect x="360" y="360" width="180" height="180" rx="12"/>
+    <rect x="570" y="360" width="180" height="180" rx="12"/>
+    <rect x="780" y="360" width="180" height="180" rx="12"/>
+    <rect x="150" y="570" width="180" height="180" rx="12"/>
+    <rect x="360" y="570" width="180" height="180" rx="12"/>
+    <rect x="780" y="570" width="180" height="180" rx="12"/>
+  </g>
+  <rect x="570" y="570" width="180" height="180" rx="12" fill="#d98a3d"/>
+  <rect x="570" y="570" width="180" height="180" rx="12" fill="none" stroke="#0d3b38" stroke-width="8"/>
+</svg>

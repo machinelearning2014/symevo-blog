@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Layered translucent rectangles">
+  <rect width="1200" height="900" fill="#efe6d4"/>
+  <rect x="120" y="170" width="620" height="560" rx="28" fill="#2b8d84" opacity=".55"/>
+  <rect x="320" y="120" width="620" height="560" rx="28" fill="#1d6f68" opacity=".55"/>
+  <rect x="520" y="220" width="560" height="520" rx="28" fill="#d98a3d" opacity=".72"/>
+  <line x1="120" y1="760" x2="1080" y2="760" stroke="#0d3b38" stroke-width="6" opacity=".35"/>
+</svg>
