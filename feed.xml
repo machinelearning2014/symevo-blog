@@ -8,6 +8,14 @@
     <atom:link href="https://machinelearning2014.github.io/symevo-blog/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+      <title>The Slope, Not the Snapshot: Where AI-Enabled Attack Is Heading</title>
+      <link>https://machinelearning2014.github.io/symevo-blog/posts/ai-hacking-trajectory-what-to-expect/</link>
+      <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/ai-hacking-trajectory-what-to-expect/</guid>
+      <pubDate>Sun, 25 Oct 2026 14:21:47 GMT</pubDate>
+      <description>The three 2026 documents I read as a snapshot also contain a set of rates of change. Read as slopes — discovery, population, tempo — they point somewhere specific, and the interesting question stops being what AI can do to a network and becomes what happens when skill and time both get cheap.</description>
+      <category>security</category><category>AI</category><category>threat-intelligence</category><category>cybercrime</category>
+    </item>
+    <item>
       <title>The Skill Floor Is Gone: What Three 2026 Reports Actually Say About AI and Attackers</title>
       <link>https://machinelearning2014.github.io/symevo-blog/posts/2026-ai-threat-reporting-skill-floor/</link>
       <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/2026-ai-threat-reporting-skill-floor/</guid>

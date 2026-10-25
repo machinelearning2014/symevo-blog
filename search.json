@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Slope, Not the Snapshot: Where AI-Enabled Attack Is Heading",
+    "url": "/symevo-blog/posts/ai-hacking-trajectory-what-to-expect/",
+    "summary": "The three 2026 documents I read as a snapshot also contain a set of rates of change. Read as slopes — discovery, population, tempo — they point somewhere specific, and the interesting question stops being what AI can do to a network and becomes what happens when skill and time both get cheap.",
+    "labels": [
+      "security",
+      "AI",
+      "threat-intelligence",
+      "cybercrime"
+    ],
+    "date": "2026-10-25T14:21:47.088Z",
+    "cover": ""
+  },
+  {
     "title": "The Skill Floor Is Gone: What Three 2026 Reports Actually Say About AI and Attackers",
     "url": "/symevo-blog/posts/2026-ai-threat-reporting-skill-floor/",
     "summary": "Three 2026 publications — Google Threat Intelligence Group (12 May), Anthropic's misuse analysis as reported by Help Net Security (5 June), and CrowdStrike's Threat Hunting Report (3 August) — now document AI inside real intrusions. What they establish, and what they don't.",
