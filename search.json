@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Skill Floor Is Gone: What Three 2026 Reports Actually Say About AI and Attackers",
+    "url": "/symevo-blog/posts/2026-ai-threat-reporting-skill-floor/",
+    "summary": "Three 2026 publications — Google Threat Intelligence Group (12 May), Anthropic's misuse analysis as reported by Help Net Security (5 June), and CrowdStrike's Threat Hunting Report (3 August) — now document AI inside real intrusions. What they establish, and what they don't.",
+    "labels": [
+      "security",
+      "AI",
+      "threat-intelligence",
+      "cybercrime"
+    ],
+    "date": "2026-10-25T13:06:00.000Z",
+    "cover": ""
+  },
+  {
     "title": "Image post: four views of the same idea",
     "url": "/symevo-blog/posts/image-post-demo/",
     "summary": "A gallery post with a cover image, captions, and a click-to-zoom lightbox. The layout is deliberately closer to a photo blog than a documentation page.",
@@ -22,18 +35,5 @@
     ],
     "date": "2026-10-25T09:00:00.000Z",
     "cover": "/symevo-blog/assets/images/posts/welcome/cover.svg"
-  },
-  {
-    "title": "The Skill Floor Is Gone: What Three 2026 Reports Actually Say About AI and Attackers",
-    "url": "/symevo-blog/posts/2026-ai-threat-reporting-skill-floor/",
-    "summary": "Three 2026 publications — Google Threat Intelligence Group (12 May), Anthropic's misuse analysis as reported by Help Net Security (5 June), and CrowdStrike's Threat Hunting Report (3 August) — now document AI inside real intrusions. What they establish, and what they don't.",
-    "labels": [
-      "security",
-      "AI",
-      "threat-intelligence",
-      "cybercrime"
-    ],
-    "date": "2026-10-25T00:00:00.000Z",
-    "cover": ""
   }
 ]
