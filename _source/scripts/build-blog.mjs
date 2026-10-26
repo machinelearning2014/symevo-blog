@@ -265,13 +265,13 @@ async function loadPost(filePath, options) {
   if (cover && !coverAlt) throw new Error(`Post ${slug}: cover_alt is required when cover_image is set.`);
   if (cover && !safeHref(cover)) throw new Error(`Post ${slug}: cover_image has an unsafe path.`);
   if (cover && !isExternal(cover) && !isPlainAsset(cover)) {
-    throw new Error(`Post ${slug}: local cover_image must live under blog/assets/ (assets/...).`);
+    throw new Error(`Post ${slug}: local cover_image must live under the source assets directory (assets/...).`);
   }
   if (cover && !isExternal(cover)) await validateLocalAsset(cover, options.assetsDir, `Post ${slug} cover_image`);
   const gallery = normalizeGallery(data.gallery, slug);
   for (const item of gallery) {
     if (!isExternal(item.src) && !isPlainAsset(item.src)) {
-      throw new Error(`Post ${slug}: local gallery images must live under blog/assets/ (assets/...).`);
+      throw new Error(`Post ${slug}: local gallery images must live under the source assets directory (assets/...).`);
     }
     if (!isExternal(item.src)) await validateLocalAsset(item.src, options.assetsDir, `Post ${slug} gallery image`);
   }
@@ -283,7 +283,7 @@ async function loadPost(filePath, options) {
   for (const src of inlineImages) {
     if (!safeHref(src)) throw new Error(`Post ${slug}: inline image has an unsafe src.`);
     if (!isExternal(src) && !isPlainAsset(src)) {
-      throw new Error(`Post ${slug}: local inline images must live under blog/assets/ (assets/...).`);
+      throw new Error(`Post ${slug}: local inline images must live under the source assets directory (assets/...).`);
     }
     if (!isExternal(src)) await validateLocalAsset(src, options.assetsDir, `Post ${slug} inline image`);
   }
@@ -313,7 +313,7 @@ async function validateLocalAsset(path, assetsDir, description) {
     throw new Error(`${description} does not exist: ${path}`);
   }
   if (actual !== root && !actual.startsWith(`${root}${sep}`)) {
-    throw new Error(`${description} resolves outside blog/assets/: ${path}`);
+    throw new Error(`${description} resolves outside the source assets directory: ${path}`);
   }
   if (!(await stat(actual)).isFile()) throw new Error(`${description} is not a file: ${path}`);
 }
@@ -540,7 +540,7 @@ function renderHome(options, posts, page) {
     </section>
     <div class="section-heading"><p class="eyebrow">Latest transmission</p><span>${posts.length} verified ${posts.length === 1 ? "entry" : "entries"}</span></div>
     ${pinned}
-    <section class="post-list" aria-label="More writing">${cards || `<p class="empty-state">No posts yet. Add a Markdown file under <code>blog/content/posts/</code>.</p>`}</section>
+    <section class="post-list" aria-label="More writing">${cards || `<p class="empty-state">No posts yet. Add a Markdown file with <code>blog_post</code>.</p>`}</section>
     ${pagination}`;
   return pageShell(options, {
     title: page === 1 ? options.site.title : `${options.site.title} — page ${page}`,
@@ -783,7 +783,7 @@ export async function buildBlog(options = {}) {
   const baseUrl = normalizeBaseUrl(options.baseUrl ?? process.env.BLOG_BASE_URL ?? "/");
   const includeDrafts = options.includeDrafts ?? process.env.BLOG_INCLUDE_DRAFTS === "1";
   const site = JSON.parse(await readFile(join(contentDir, "site.json"), "utf8"));
-  if (!site.title) throw new Error("blog/content/site.json must define a title.");
+  if (!site.title) throw new Error("The remote blog source content/site.json must define a title.");
 
   const postsDir = join(contentDir, "posts");
   const files = (await readdir(postsDir, { withFileTypes: true }))
