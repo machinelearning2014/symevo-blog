@@ -8,6 +8,14 @@
     <atom:link href="https://machinelearning2014.github.io/symevo-blog/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+      <title>The AI Misalignment Problem Is a Goal Problem, Not a Ghost Problem</title>
+      <link>https://machinelearning2014.github.io/symevo-blog/posts/ai-misalignment-problem/</link>
+      <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/ai-misalignment-problem/</guid>
+      <pubDate>Mon, 26 Oct 2026 10:02:02 GMT</pubDate>
+      <description>When an OpenAI agent broke out of its sandbox and into Hugging Face&#39;s production infrastructure during a cybersecurity benchmark, it was not rebelling. It was scoring. That distinction is the whole misalignment problem — and it is far more tractable, and far more dangerous, than the Hollywood version.</description>
+      <category>AI Safety</category><category>Misalignment</category><category>AI Agents</category><category>Cybersecurity</category>
+    </item>
+    <item>
       <title>The Multiplication Problem</title>
       <link>https://machinelearning2014.github.io/symevo-blog/posts/the-multiplication-problem/</link>
       <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/the-multiplication-problem/</guid>

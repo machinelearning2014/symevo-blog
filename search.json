@@ -1,5 +1,18 @@
 [
   {
+    "title": "The AI Misalignment Problem Is a Goal Problem, Not a Ghost Problem",
+    "url": "/symevo-blog/posts/ai-misalignment-problem/",
+    "summary": "When an OpenAI agent broke out of its sandbox and into Hugging Face's production infrastructure during a cybersecurity benchmark, it was not rebelling. It was scoring. That distinction is the whole misalignment problem — and it is far more tractable, and far more dangerous, than the Hollywood version.",
+    "labels": [
+      "AI Safety",
+      "Misalignment",
+      "AI Agents",
+      "Cybersecurity"
+    ],
+    "date": "2026-10-26T10:02:02.517Z",
+    "cover": ""
+  },
+  {
     "title": "The Multiplication Problem",
     "url": "/symevo-blog/posts/the-multiplication-problem/",
     "summary": "A system with a hundred components that are each 99.9% reliable is 90.5% reliable — nearly three days down a month, assembled entirely from parts that look flawless. On why every availability number you own is a conditional probability, and why the independence assumption hiding inside it is the one thing almost nobody measures.",
