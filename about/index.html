@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About — SYMEVO Journal</title>
+<title>SYMEVO: A Symbolic Evidence-Gated Verification Orchestrator — SYMEVO Journal</title>
 <meta name="description" content="Notes from a symbolic, evidence-gated verification orchestrator. Long-form writing about agents, proof, code, and the craft of making claims hold up.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="generator" content="SYMEVO static blog">
@@ -11,8 +11,17 @@
 <link rel="canonical" href="https://machinelearning2014.github.io/symevo-blog/about/">
 <link rel="alternate" type="application/rss+xml" title="SYMEVO Journal" href="/symevo-blog/feed.xml">
 <link rel="stylesheet" href="/symevo-blog/theme/style.css">
+<style>
+.about-page .paper-figure{margin:2.4em 0}
+.about-page .paper-figure .figscroll{overflow-x:auto;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2)}
+.about-page .paper-figure svg{display:block;width:100%;min-width:560px;max-width:760px;height:auto;margin:0 auto}
+.about-page .paper-figure svg text{fill:currentColor;font-family:var(--font-mono)}
+.about-page .paper-figure svg .lbl{font-family:var(--font-body)}
+.about-page .paper-figure figcaption{margin-top:10px;color:var(--muted);font-family:var(--font-mono);font-size:11px;line-height:1.5}
+.about-page .post-content table{display:block;overflow-x:auto}
+</style>
 <meta property="og:type" content="website">
-<meta property="og:title" content="About — SYMEVO Journal">
+<meta property="og:title" content="SYMEVO: A Symbolic Evidence-Gated Verification Orchestrator — SYMEVO Journal">
 <meta property="og:description" content="Notes from a symbolic, evidence-gated verification orchestrator. Long-form writing about agents, proof, code, and the craft of making claims hold up.">
 <meta property="og:url" content="https://machinelearning2014.github.io/symevo-blog/about/">
 <meta property="og:image" content="https://machinelearning2014.github.io/symevo-blog/assets/images/posts/the-multiplication-problem/reliability_multiplication.png">
@@ -37,8 +46,61 @@
 </header>
 <div class="layout">
   <main id="main" class="content">
-    <article class="page"><header class="post-header"><p class="eyebrow">About</p><h1>About</h1></header><div class="post-content"><p>SYMEVO is a symbolic evidence-gated verification orchestrator. It classifies a request, gives the model authority-specific tools, and refuses to finalize until that authority&#39;s workflow checks pass.</p>
-<p>This journal is where longer notes live: design decisions, verification patterns, and the occasional post-mortem.</p>
+    <article class="page"><header class="post-header"><p class="eyebrow">About</p><h1>SYMEVO: A Symbolic Evidence-Gated Verification Orchestrator</h1></header><div class="post-content"><p>The name is a description, and the honest way to read it is to take it apart. <strong>Symbolic</strong> because the system <em>decides</em> by evaluating declared symbols and rules rather than raw impression — which is a property of the whole pipeline, not only of the reasoning inside a phase. <strong>Evidence-gated</strong> because deterministic checks run before a candidate answer can be published. <strong>Orchestrator</strong> because the model never picks the route.</p>
+<p>Start with how far the first word reaches, because it is easy to file &quot;symbolic&quot; under <code>REASON</code> and move on. The route itself is <em>derived</em> by a Prolog program from extracted facts, and the program reports the rule that produced the plan and whether that plan was unique. The evidence obligations, and the authority that owns each one, are Prolog facts. Tool permissions are a declarative boundary the chosen route cannot override. Evidence is bound to its source by content hash, and two renderings of a sentence are compared through a canonical identity rather than a fuzzy match. Completion is decided by checking declared state against each authority&#39;s obligations — among them whether every decidable claim&#39;s class has been discharged by the one procedure fixed to it.</p>
+<p>So the symbolic layer is not a reasoning style available to one authority. It is the decision layer of the entire orchestration: routing, obligation, permission, binding, and verdict are all formal evaluation over declared symbols. The model contributes interpretation at exactly two points — extracting the triage facts, and reasoning inside a phase — and neither of those points is where a verdict comes from.</p>
+<p>The authorities are where the idea becomes visible, and each realizes it differently. <code>REASON</code> derives its conclusions by executing a Prolog knowledge base. <code>CODE</code> registers decidable claims in a runtime-owned, revision-bound <em>CODE Formal Model</em>, where a claim&#39;s class fixes exactly one procedure that must discharge it — a knowledge-base query, an approved typecheck, an SMT formalization, or the maths bridge. <code>MATHS</code> works in SymPy, Z3, and Lean. Three mechanisms, one posture: nothing counts because it was asserted.</p>
+<p>The load-bearing sentence is this one: a temperature-zero model extracts <em>what evidence a request requires</em>, runtime-owned SWI-Prolog derives the valid authority sequence from those facts, the runtime scores its complexity and compiles a hashed execution plan, each authority executes its own native workflow, and a final-candidate verifier refuses to publish until the gates pass. Every request gets a plan; complex, cross-authority, formal, or externally mutating work gets a detailed plan with explicit artifact handoffs and completion gates.</p>
+<figure class="paper-figure"><div class="figscroll"><svg viewBox="0 0 680 596" role="img" aria-label="Diagram: a request is classified by the Evidence Router, an ordered authority plan is derived and certified by Prolog, each authority runs its own evidence workflow, and a final-candidate verifier gates the answer into one of four terminal statuses."><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/></marker></defs><!-- request --><rect x="32" y="18" width="616" height="56" rx="4" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.55"/><text x="48" y="42" font-size="13" class="lbl" font-weight="600">request</text><text x="48" y="61" font-size="11" opacity="0.65">natural language &mdash; the only thing the model is trusted to interpret</text><line x1="340" y1="74" x2="340" y2="112" stroke="currentColor" stroke-width="1.2" marker-end="url(#ar)" opacity="0.7"/><!-- evidence router --><rect x="32" y="120" width="616" height="92" rx="4" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="48" y="143" font-size="13" class="lbl" font-weight="600">Evidence Router &mdash; &ldquo;Lite-REASON&rdquo;</text><text x="48" y="163" font-size="11" opacity="0.7">temperature-zero model, JSON-only fact extraction</text><text x="48" y="181" font-size="11" opacity="0.5">extracts action, target, criteria, operations, proof_mode, unresolved, alternatives</text><text x="48" y="199" font-size="11" opacity="0.5">supplies no phase plan &mdash; model-supplied phases are ignored</text><line x1="340" y1="212" x2="340" y2="250" stroke="currentColor" stroke-width="1.2" marker-end="url(#ar)" opacity="0.7"/><!-- prolog --><rect x="32" y="258" width="616" height="86" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><text x="48" y="281" font-size="13" class="lbl" font-weight="600">runtime-owned SWI-Prolog</text><text x="48" y="301" font-size="11" opacity="0.7">criterion_evidence/2 &rarr; required/1 &rarr; required_owner/1 &rarr; shortest valid sequence</text><text x="48" y="319" font-size="10" opacity="0.5">bounded to 7 phases &middot; enumerate before selecting, so cuts never hide a competing plan</text><text x="48" y="335" font-size="10" opacity="0.5">emits a routing status and a SHA-256 triage certificate</text><line x1="340" y1="344" x2="340" y2="382" stroke="currentColor" stroke-width="1.4" marker-end="url(#ar)"/><!-- authority phases --><rect x="32" y="390" width="196" height="104" rx="4" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.75"/><text x="46" y="412" font-size="12" font-weight="600" class="lbl">REASON</text><text x="46" y="432" font-size="10" opacity="0.65">Prolog derivation IS</text><text x="46" y="446" font-size="10" opacity="0.65">the evidence</text><text x="46" y="468" font-size="10" opacity="0.5">R1 SETUP &rarr; R6 ANSWER</text><text x="46" y="484" font-size="10" opacity="0.5">consistency + dependence</text><rect x="242" y="390" width="196" height="104" rx="4" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.75"/><text x="256" y="412" font-size="12" font-weight="600" class="lbl">MATHS</text><text x="256" y="432" font-size="10" opacity="0.65">computation, derivation,</text><text x="256" y="446" font-size="10" opacity="0.65">proof, or Lean formal</text><text x="256" y="468" font-size="10" opacity="0.5">M0 START &rarr; M5 ANSWER</text><text x="256" y="484" font-size="10" opacity="0.5">frozen certificate</text><rect x="452" y="390" width="196" height="104" rx="4" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.75"/><text x="466" y="412" font-size="12" font-weight="600" class="lbl">CODE</text><text x="466" y="432" font-size="10" opacity="0.65">source, diff, build and</text><text x="466" y="446" font-size="10" opacity="0.65">test output</text><text x="466" y="468" font-size="10" opacity="0.5">K1 INSPECT &rarr; K5 ANSWER</text><text x="466" y="484" font-size="10" opacity="0.5">post-mutation diff</text><line x1="340" y1="494" x2="340" y2="522" stroke="currentColor" stroke-width="1.4" marker-end="url(#ar)"/><!-- verifier --><rect x="112" y="530" width="456" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><text x="132" y="550" font-size="12" class="lbl" font-weight="600">VerificationController &mdash; refusals are the point</text><line x1="340" y1="560" x2="340" y2="578" stroke="currentColor" stroke-width="1.4" marker-end="url(#ar)"/><text x="352" y="590" font-size="11" opacity="0.8">SOLVED &middot; MAPPED &middot; INCOMPLETE &middot; DISSOLVED</text></svg></div><figcaption>The turn lifecycle. The model contributes interpretation at the first box and reasoning inside the authority phases; the route, the certificate, and the terminal status are all runtime-owned.</figcaption></figure><p>What makes it more than a prompt wrapper is where authority sits. The model classifies and reasons; it does not certify. Tool output cannot declare its own workflow completion, and the runtime-owned Prolog harness cannot be redefined by model code. Every terminal answer carries a status the model did not get to award itself.</p>
+<blockquote>
+<p><strong>The one sentence to remember.</strong> The model does not write or certify the task graph. It extracts routing facts; trusted Prolog chooses the route; the runtime compiles and hashes the execution plan; and each authority workflow remains authoritative for its own completion.</p>
+</blockquote>
+<h2>Where SYMEVO fits</h2>
+<p>SYMEVO is a verification orchestrator, and the orchestration is the unit of capability — not the individual model call. A single request can be routed across authorities, and obligations cross between them.</p>
+<p>Two examples, both from the policy layer. A <code>CODE</code> claim of class <code>constraint</code> is discharged by SMT — the same entailment authority <code>REASON</code> uses, which is why the SMT controller has to stay reachable from CODE. And the CODE↔MATHS bridge runs <code>create_manifest</code> in CODE, proves the exact claim with <code>maths_problem</code>, then accepts the runtime-recorded certificate back in CODE. Neither capability belongs to any single authority. Both are properties of the composition, and neither is reducible to one of its parts.</p>
+<p>That is the part worth being precise about. A model call produces text; the orchestration produces a <em>decided</em> answer, and it can do so because routing, obligation, permission, binding, and verdict are all formal — which is what lets independently verified results be composed into something no single authority, and no single call, could establish on its own. What the system can reach is a function of how its parts are joined, not of the model alone.</p>
+<p>The three authorities are the clearest statement of what it is for, and they come with a filter.</p>
+<h3>The filter</h3>
+<ul>
+<li><strong>The answer has a checkable form.</strong> A computation you can run, a change you can diff and test, or an argument you can derive from explicit premises. If &quot;correct&quot; has no mechanical witness, there is nothing here for a gate to consume.</li>
+<li><strong>You would rather be told INCOMPLETE than be told something fluent.</strong> The system is built to refuse. If a confident paragraph is what you actually need, this is a great deal of machinery for a worse experience.</li>
+<li><strong>You can state the premises.</strong> For <code>REASON</code>, the derivation is only as good as what you hand it — and SYMEVO verifies internal consistency, not premise truth. You remain the source of the premises.</li>
+</ul>
+<h3>What the three authorities replace</h3>
+<table>
+<thead>
+<tr>
+<th>Authority</th>
+<th>Evidence that closes it</th>
+<th>What it replaces</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>MATHS</code></td>
+<td>a computation, a derivation with a frozen certificate, a constructed proof, or exact Lean source hashes</td>
+<td>a model asserting a result it may have hallucinated</td>
+</tr>
+<tr>
+<td><code>CODE</code></td>
+<td>source inspection, the post-mutation diff, and native build/test output</td>
+<td>a patch that looks right and was never run</td>
+</tr>
+<tr>
+<td><code>REASON</code></td>
+<td>an executable Prolog derivation with proof traces, consistency checks, and assumption-dependence testing</td>
+<td>a plausible argument with no stated premises</td>
+</tr>
+</tbody></table>
+<h3>The wrong tool</h3>
+<ul>
+<li><strong>Open-ended writing.</strong> There is no gate for prose quality, and no authority owns it.</li>
+<li><strong>Facts you need to be true.</strong> SYMEVO can ground a claim in a source you opened, but it does not verify that the source is right. Search results are discovery only.</li>
+<li><strong>Latency-critical paths.</strong> A turn runs a classifier, a Prolog process, an authority workflow, and a verifier. There is a per-turn deadline (default 30 minutes) and it is not a small number.</li>
+<li><strong>Anything where you want the model&#39;s own judgement trusted.</strong> That is the thing the architecture is built not to do.</li>
+</ul>
+<blockquote>
+<p><strong>Read this before trusting the gates.</strong> SYMEVO improves the traceability and internal validity of an answer. It does not turn a model into an oracle: source truth, source quality, and the correctness of translating natural language into a formal model all remain inside the trust boundary.</p>
+</blockquote>
 </div></article>
   </main>
   
