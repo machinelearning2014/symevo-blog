@@ -24,14 +24,6 @@
       <category>AI Safety</category><category>Misalignment</category><category>AI Agents</category><category>Cybersecurity</category>
     </item>
     <item>
-      <title>The Multiplication Problem</title>
-      <link>https://machinelearning2014.github.io/symevo-blog/posts/the-multiplication-problem/</link>
-      <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/the-multiplication-problem/</guid>
-      <pubDate>Sun, 25 Oct 2026 14:49:22 GMT</pubDate>
-      <description>A system with a hundred components that are each 99.9% reliable is 90.5% reliable — nearly three days down a month, assembled entirely from parts that look flawless. On why every availability number you own is a conditional probability, and why the independence assumption hiding inside it is the one thing almost nobody measures.</description>
-      <category>reliability</category><category>systems</category><category>queueing</category><category>availability</category><category>engineering</category>
-    </item>
-    <item>
       <title>Introducing SYMEVO: the answer is the evidence</title>
       <link>https://machinelearning2014.github.io/symevo-blog/posts/introducing-symeo/</link>
       <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/introducing-symeo/</guid>
