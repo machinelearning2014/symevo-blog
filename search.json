@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Report Became the Exploit: AI Misuse Against PHP and the Rest of the Web Stack",
+    "url": "/symevo-blog/posts/ai-misuse-php-web-exploits/",
+    "summary": "AI misuse is not inventing new classes of web vulnerability. It is compressing the gap between a published advisory and a working weapon — and PHP-style stacks are exactly where that compression bites hardest.",
+    "labels": [
+      "security",
+      "AI",
+      "PHP",
+      "web-exploitation",
+      "appsec"
+    ],
+    "date": "2026-10-26T07:51:09.060Z",
+    "cover": ""
+  },
+  {
     "title": "The Multiplication Problem",
     "url": "/symevo-blog/posts/the-multiplication-problem/",
     "summary": "A system with a hundred components that are each 99.9% reliable is 90.5% reliable — nearly three days down a month, assembled entirely from parts that look flawless. On why every availability number you own is a conditional probability, and why the independence assumption hiding inside it is the one thing almost nobody measures.",
