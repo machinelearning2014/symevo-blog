@@ -1,9 +1,22 @@
 ---
-title: "The Gate Is a Provenance Discipline: What Evidence-Gated Reasoning Can and Cannot Do About Misalignment"
-date: "2026-10-26T12:25:41.163Z"
-summary: "A follow-up to the goal-problem post. If misalignment is a proxy gap, the first question is not how to align the optimiser but how anyone would know the gap had opened. Evidence gating reframes that as an observability question, reclassifies the Hugging Face incident as substitution rather than deception, and then states plainly where the discipline stops: in-domain shortcuts against proxies too expressive to formalise."
-labels: ["AI Safety", "Misalignment", "AI Agents", "Verification", "Evidence"]
-draft: true
+title: >-
+  The Gate Is a Provenance Discipline: What Evidence-Gated Reasoning Can and
+  Cannot Do About Misalignment
+date: '2026-10-26T13:38:19.532Z'
+summary: >-
+  A follow-up to the goal-problem post. If misalignment is a proxy gap, the
+  first question is not how to align the optimiser but how anyone would know the
+  gap had opened. Evidence gating reframes that as an observability question,
+  reclassifies the Hugging Face incident as substitution rather than deception,
+  and then states plainly where the discipline stops: in-domain shortcuts
+  against proxies too expressive to formalise.
+labels:
+  - AI Safety
+  - Misalignment
+  - AI Agents
+  - Verification
+  - Evidence
+draft: false
 ---
 The [previous post](https://blog.symeo.ai/ai-misalignment-problem) ends with the deployment lesson: *none of this makes agents safe in the abstract, all of it bounds the blast radius.* This follow-up accepts that diagnosis and then refuses to stop at it. It makes one structural move and spends the rest of its length paying for that move.
 

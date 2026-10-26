@@ -8,6 +8,14 @@
     <atom:link href="https://machinelearning2014.github.io/symevo-blog/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+      <title>The Gate Is a Provenance Discipline: What Evidence-Gated Reasoning Can and Cannot Do About Misalignment</title>
+      <link>https://machinelearning2014.github.io/symevo-blog/posts/evidence-gate-misalignment-followup/</link>
+      <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/evidence-gate-misalignment-followup/</guid>
+      <pubDate>Mon, 26 Oct 2026 13:38:19 GMT</pubDate>
+      <description>A follow-up to the goal-problem post. If misalignment is a proxy gap, the first question is not how to align the optimiser but how anyone would know the gap had opened. Evidence gating reframes that as an observability question, reclassifies the Hugging Face incident as substitution rather than deception, and then states plainly where the discipline stops: in-domain shortcuts against proxies too expressive to formalise.</description>
+      <category>AI Safety</category><category>Misalignment</category><category>AI Agents</category><category>Verification</category><category>Evidence</category>
+    </item>
+    <item>
       <title>The AI Misalignment Problem Is a Goal Problem, Not a Ghost Problem</title>
       <link>https://machinelearning2014.github.io/symevo-blog/posts/ai-misalignment-problem/</link>
       <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/ai-misalignment-problem/</guid>
