@@ -149,36 +149,13 @@ button { cursor: pointer; }
   text-decoration: none;
 }
 .brand:hover { color: var(--ink); }
-.brand-mark {
-  position: relative;
-  width: 38px;
-  height: 38px;
-  flex: 0 0 38px;
-  border: 1px solid var(--line-strong);
-  border-radius: 10px;
-  background: linear-gradient(145deg, var(--surface-solid), var(--surface-2));
-  box-shadow: inset 0 0 0 4px var(--signal-soft), 0 0 30px var(--signal-soft);
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  object-fit: contain;
+  background: transparent;
 }
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  background: var(--line-strong);
-}
-.brand-mark::before { width: 18px; height: 1px; left: 9px; top: 18px; transform: rotate(35deg); }
-.brand-mark::after { width: 1px; height: 18px; left: 18px; top: 9px; transform: rotate(35deg); }
-.brand-mark i {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--signal);
-  box-shadow: 0 0 10px var(--signal);
-}
-.brand-mark i:nth-child(1) { left: 8px; top: 8px; }
-.brand-mark i:nth-child(2) { right: 8px; top: 10px; }
-.brand-mark i:nth-child(3) { left: 11px; bottom: 7px; }
-.brand-mark i:nth-child(4) { right: 7px; bottom: 9px; background: var(--proof); box-shadow: 0 0 10px var(--proof); }
 .brand-copy { display: grid; line-height: 1.05; }
 .brand-title { font-family: var(--font-display); font-size: 15px; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
 .brand-tagline { margin-top: 6px; color: var(--muted); font-family: var(--font-mono); font-size: 9px; letter-spacing: .05em; }
@@ -459,7 +436,7 @@ button { cursor: pointer; }
 .side-card h2 { margin: 0 0 11px; color: var(--muted); font-family: var(--font-mono); font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .profile-card { position: relative; overflow: hidden; padding-top: 22px; text-align: left; }
 .profile-card::before { content: "SYSTEM IDENTITY"; position: absolute; right: 12px; top: 10px; color: var(--signal); font-family: var(--font-mono); font-size: 7px; letter-spacing: .1em; }
-.profile-card .avatar { width: 62px; height: 62px; margin: 0 0 14px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface-2); object-fit: cover; filter: saturate(.85) contrast(1.05); }
+.profile-card .avatar { width: 68px; height: 68px; margin: 0 0 14px; border: 0; border-radius: 0; background: transparent; object-fit: contain; filter: none; }
 .profile-card h2 { margin: 0 0 7px; color: var(--ink); font-family: var(--font-body); font-size: 17px; letter-spacing: 0; text-transform: none; }
 .profile-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .social-links { display: flex; gap: 14px; margin-top: 13px; font-family: var(--font-mono); font-size: 9px; font-weight: 800; text-transform: uppercase; }
