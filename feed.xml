@@ -8,14 +8,6 @@
     <atom:link href="https://machinelearning2014.github.io/symevo-blog/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
-      <title>AI Was in the Room: What the October 2026 PHP, Node.js and Supply-Chain Incidents Actually Prove</title>
-      <link>https://machinelearning2014.github.io/symevo-blog/posts/ai-misuse-php-web-exploits/</link>
-      <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/ai-misuse-php-web-exploits/</guid>
-      <pubDate>Mon, 26 Oct 2026 08:26:47 GMT</pubDate>
-      <description>The disclosures landed days apart and the coverage blurred them into a single story. They are not one story. A case-by-case account of the October 2026 PHP, Node.js and package-registry incidents — what each one proves about machine-assisted attack work, what it does not, and where the public record simply stops.</description>
-      <category>security</category><category>AI</category><category>PHP</category><category>Node.js</category><category>supply-chain</category><category>appsec</category><category>exploit-development</category><category>agentic-ai</category>
-    </item>
-    <item>
       <title>The Multiplication Problem</title>
       <link>https://machinelearning2014.github.io/symevo-blog/posts/the-multiplication-problem/</link>
       <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/the-multiplication-problem/</guid>

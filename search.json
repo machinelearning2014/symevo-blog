@@ -1,22 +1,5 @@
 [
   {
-    "title": "AI Was in the Room: What the October 2026 PHP, Node.js and Supply-Chain Incidents Actually Prove",
-    "url": "/symevo-blog/posts/ai-misuse-php-web-exploits/",
-    "summary": "The disclosures landed days apart and the coverage blurred them into a single story. They are not one story. A case-by-case account of the October 2026 PHP, Node.js and package-registry incidents — what each one proves about machine-assisted attack work, what it does not, and where the public record simply stops.",
-    "labels": [
-      "security",
-      "AI",
-      "PHP",
-      "Node.js",
-      "supply-chain",
-      "appsec",
-      "exploit-development",
-      "agentic-ai"
-    ],
-    "date": "2026-10-26T08:26:47.956Z",
-    "cover": ""
-  },
-  {
     "title": "The Multiplication Problem",
     "url": "/symevo-blog/posts/the-multiplication-problem/",
     "summary": "A system with a hundred components that are each 99.9% reliable is 90.5% reliable — nearly three days down a month, assembled entirely from parts that look flawless. On why every availability number you own is a conditional probability, and why the independence assumption hiding inside it is the one thing almost nobody measures.",
