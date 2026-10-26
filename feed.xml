@@ -8,12 +8,12 @@
     <atom:link href="https://machinelearning2014.github.io/symevo-blog/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
-      <title>The Report Became the Exploit: AI Misuse Against PHP and the Rest of the Web Stack</title>
+      <title>The Report Became the Exploit: AI Misuse Against PHP and the Web Stack, October 2026</title>
       <link>https://machinelearning2014.github.io/symevo-blog/posts/ai-misuse-php-web-exploits/</link>
       <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/ai-misuse-php-web-exploits/</guid>
-      <pubDate>Mon, 26 Oct 2026 07:51:09 GMT</pubDate>
-      <description>AI misuse is not inventing new classes of web vulnerability. It is compressing the gap between a published advisory and a working weapon — and PHP-style stacks are exactly where that compression bites hardest.</description>
-      <category>security</category><category>AI</category><category>PHP</category><category>web-exploitation</category><category>appsec</category>
+      <pubDate>Mon, 26 Oct 2026 08:02:41 GMT</pubDate>
+      <description>Yes — AI played a confirmed and significant role in the October 2026 PHP vulnerabilities. The distinction that matters is where: AI on the research side discovering and weaponising flaws, not AI running the criminal side. Here is what each incident actually establishes.</description>
+      <category>security</category><category>AI</category><category>PHP</category><category>web-exploitation</category><category>appsec</category><category>supply-chain</category>
     </item>
     <item>
       <title>The Multiplication Problem</title>

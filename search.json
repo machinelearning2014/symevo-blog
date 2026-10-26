@@ -1,16 +1,17 @@
 [
   {
-    "title": "The Report Became the Exploit: AI Misuse Against PHP and the Rest of the Web Stack",
+    "title": "The Report Became the Exploit: AI Misuse Against PHP and the Web Stack, October 2026",
     "url": "/symevo-blog/posts/ai-misuse-php-web-exploits/",
-    "summary": "AI misuse is not inventing new classes of web vulnerability. It is compressing the gap between a published advisory and a working weapon — and PHP-style stacks are exactly where that compression bites hardest.",
+    "summary": "Yes — AI played a confirmed and significant role in the October 2026 PHP vulnerabilities. The distinction that matters is where: AI on the research side discovering and weaponising flaws, not AI running the criminal side. Here is what each incident actually establishes.",
     "labels": [
       "security",
       "AI",
       "PHP",
       "web-exploitation",
-      "appsec"
+      "appsec",
+      "supply-chain"
     ],
-    "date": "2026-10-26T07:51:09.060Z",
+    "date": "2026-10-26T08:02:41.638Z",
     "cover": ""
   },
   {
