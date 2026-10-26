@@ -1,17 +1,19 @@
 [
   {
-    "title": "The Report Became the Exploit: AI Misuse Against PHP and the Web Stack, October 2026",
+    "title": "AI Was in the Room: What the October 2026 PHP, Node.js and Supply-Chain Incidents Actually Prove",
     "url": "/symevo-blog/posts/ai-misuse-php-web-exploits/",
-    "summary": "Yes — AI played a confirmed and significant role in the October 2026 PHP vulnerabilities. The distinction that matters is where: AI on the research side discovering and weaponising flaws, not AI running the criminal side. Here is what each incident actually establishes.",
+    "summary": "AI played a confirmed and significant role in the October 2026 PHP vulnerabilities — but on the research side, discovering and weaponising flaws, not driving the criminal attacks. Here is what each incident establishes, and where the evidence stops.",
     "labels": [
       "security",
       "AI",
       "PHP",
-      "web-exploitation",
+      "Node.js",
+      "supply-chain",
       "appsec",
-      "supply-chain"
+      "exploit-development",
+      "agentic-ai"
     ],
-    "date": "2026-10-26T08:02:41.638Z",
+    "date": "2026-10-26T08:07:39.684Z",
     "cover": ""
   },
   {
