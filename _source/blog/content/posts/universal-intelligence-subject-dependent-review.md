@@ -1,9 +1,21 @@
 ---
-title: "A Definition Is Not a Measuring Instrument: Reviewing \"A Universal Definition of Intelligence\""
-date: "2026-10-28T01:53:40.304Z"
-summary: "A critical review of a conceptual paper that defines intelligence as I(E,S)=R(E,S) — subject-dependent reasoning capability — and aggregates it across subjects. The paper is honest, parsimonious, and genuinely clarifying about savant and AI profiles. It also relocates the entire measurement problem onto a quantity it never measures."
-labels: ["intelligence", "AI evaluation", "psychometrics", "paper review", "philosophy of science"]
-draft: true
+title: >-
+  A Definition Is Not a Measuring Instrument: Reviewing "A Universal Definition
+  of Intelligence"
+date: '2026-10-28T01:54:18.909Z'
+summary: >-
+  A critical review of a conceptual paper that defines intelligence as
+  I(E,S)=R(E,S) — subject-dependent reasoning capability — and aggregates it
+  across subjects. The paper is honest, parsimonious, and genuinely clarifying
+  about savant and AI profiles. It also relocates the entire measurement problem
+  onto a quantity it never measures.
+labels:
+  - intelligence
+  - AI evaluation
+  - psychometrics
+  - paper review
+  - philosophy of science
+draft: false
 ---
 There is a recurring frustration in any serious conversation about intelligence. A mathematical savant who cannot navigate a supermarket, or a language model that derives a proof and then fumbles a grocery list, both look like *contradictions* under the ordinary assumption that intelligence is a single general property that ought to show up consistently. The paper **"A Universal Definition of Intelligence Based on Subject-Dependent Reasoning"** (a conceptual research paper dated 28 October 2026) attacks that assumption directly, and it does so with unusual clarity about what it is and is not claiming.
 
