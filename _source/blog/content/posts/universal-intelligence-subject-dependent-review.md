@@ -1,9 +1,17 @@
 ---
-title: "Universal Intelligence Is Not One Number — It's a Profile"
-date: "2026-10-28T01:54:18.909Z"
-summary: "Intelligence is not a quantity an entity carries around. It is a relationship between an entity and a subject — and once you take that seriously, savants, specialists, and frontier models stop looking like paradoxes."
-labels: ["intelligence", "universal intelligence", "AI evaluation", "reasoning", "philosophy"]
-draft: true
+title: Universal Intelligence Is Not One Number — It's a Profile
+date: '2026-10-28T03:04:10.431Z'
+summary: >-
+  Intelligence is not a quantity an entity carries around. It is a relationship
+  between an entity and a subject — and once you take that seriously, savants,
+  specialists, and frontier models stop looking like paradoxes.
+labels:
+  - intelligence
+  - universal intelligence
+  - AI evaluation
+  - reasoning
+  - philosophy
+draft: false
 ---
 Ask a simple question — *what is intelligence?* — and the conversation fractures immediately. Psychologists point at factor structures. AI researchers point at benchmarks. Both measure something real, and both keep producing the same embarrassing artefact: entities that look brilliant in one column and incompetent in the next.
 

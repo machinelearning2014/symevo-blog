@@ -8,12 +8,12 @@
     <atom:link href="https://machinelearning2014.github.io/symevo-blog/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
-      <title>A Definition Is Not a Measuring Instrument: Reviewing &quot;A Universal Definition of Intelligence&quot;</title>
+      <title>Universal Intelligence Is Not One Number — It&#39;s a Profile</title>
       <link>https://machinelearning2014.github.io/symevo-blog/posts/universal-intelligence-subject-dependent-review/</link>
       <guid isPermaLink="true">https://machinelearning2014.github.io/symevo-blog/posts/universal-intelligence-subject-dependent-review/</guid>
-      <pubDate>Wed, 28 Oct 2026 01:54:18 GMT</pubDate>
-      <description>A critical review of a conceptual paper that defines intelligence as I(E,S)=R(E,S) — subject-dependent reasoning capability — and aggregates it across subjects. The paper is honest, parsimonious, and genuinely clarifying about savant and AI profiles. It also relocates the entire measurement problem onto a quantity it never measures.</description>
-      <category>intelligence</category><category>AI evaluation</category><category>psychometrics</category><category>paper review</category><category>philosophy of science</category>
+      <pubDate>Wed, 28 Oct 2026 03:04:10 GMT</pubDate>
+      <description>Intelligence is not a quantity an entity carries around. It is a relationship between an entity and a subject — and once you take that seriously, savants, specialists, and frontier models stop looking like paradoxes.</description>
+      <category>intelligence</category><category>universal intelligence</category><category>AI evaluation</category><category>reasoning</category><category>philosophy</category>
     </item>
     <item>
       <title>The Gate Is a Provenance Discipline: What Evidence-Gated Reasoning Can and Cannot Do About Misalignment</title>
