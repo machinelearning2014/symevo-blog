@@ -546,3 +546,9 @@ button { cursor: pointer; }
   .layout { display: block; padding: 0; }
   body { background: #fff; color: #000; }
 }
+
+/* About page: the lifecycle diagram is a standalone SVG asset so it survives
+   every full-site rebuild. The source of this page is content/about.md. */
+.about-page .post-figure img { padding: 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); box-sizing: border-box; }
+.about-page .post-figure figcaption { margin-top: 10px; font-size: 11px; line-height: 1.5; text-align: left; }
+.about-page .post-content table { display: block; overflow-x: auto; }
