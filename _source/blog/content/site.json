@@ -1,7 +1,8 @@
 {
   "title": "SYMEVO Journal",
+  "url": "https://blog.deepthought.com.au/",
   "homeTitle": "Notes from the gate",
-  "origin": "https://machinelearning2014.github.io",
+  "origin": "https://blog.deepthought.com.au",
   "tagline": "Evidence → derivation → verdict",
   "description": "Notes from a symbolic, evidence-gated verification orchestrator. Long-form writing about agents, proof, code, and the craft of making claims hold up.",
   "author": {
@@ -10,12 +11,27 @@
     "avatar": "assets/images/prolog_ai.png"
   },
   "nav": [
-    { "label": "Home", "href": "" },
-    { "label": "Archive", "href": "archive/" },
-    { "label": "Labels", "href": "labels/" },
-    { "label": "About", "href": "about/" }
+    {
+      "label": "Home",
+      "href": ""
+    },
+    {
+      "label": "Archive",
+      "href": "archive/"
+    },
+    {
+      "label": "Labels",
+      "href": "labels/"
+    },
+    {
+      "label": "About",
+      "href": "about/"
+    }
   ],
   "social": [
-    { "label": "SYMEVO", "href": "https://www.deepthought.com.au/" }
+    {
+      "label": "SYMEVO",
+      "href": "https://www.deepthought.com.au/"
+    }
   ]
 }
