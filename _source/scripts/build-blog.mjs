@@ -5,8 +5,10 @@ import { cp, mkdir, readFile, readdir, realpath, rm, stat, writeFile } from "nod
 import { existsSync } from "node:fs";
 import { basename, dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createRequire } from "node:module";
 import matter from "gray-matter";
-import { marked } from "marked";
+import katex from "katex";
+import { Marked, marked } from "marked";
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const DEFAULT_REPO_ROOT = resolve(SCRIPT_DIR, "..");
@@ -192,8 +194,89 @@ function createRenderer(baseUrl) {
   return renderer;
 }
 
-function renderMarkdown(markdown, baseUrl) {
-  const html = marked.parse(String(markdown ?? ""), {
+// ── math ────────────────────────────────────────────────────────────────────
+// Math is rendered here, at build time, to static HTML and MathML with KaTeX:
+// the site's Content-Security-Policy allows scripts only from the site itself,
+// and the reader needs no JavaScript. The math tokenizers run before Markdown
+// escaping, which would otherwise strip \( \[ \{ and turn _ and * into emphasis.
+
+/** Render one expression; invalid LaTeX fails the build with where it is. */
+function renderMath(tex, displayMode, where) {
+  try {
+    return katex.renderToString(tex, { displayMode, output: "htmlAndMathml", throwOnError: true, strict: "ignore", trust: false });
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    throw new Error(`${where}: invalid LaTeX ${JSON.stringify(tex)}: ${reason}`);
+  }
+}
+
+function mathExtensions(where) {
+  const display = (text) => `<div class="math-display">${renderMath(text.trim(), true, where)}</div>\n`;
+  return [
+    {
+      // $$ … $$ or \[ … \] on their own lines.
+      name: "mathBlock",
+      level: "block",
+      start(src) {
+        const match = /(?:^|\n) {0,3}(?:\$\$|\\\[)/u.exec(src);
+        return match ? match.index + (match[0].startsWith("\n") ? 1 : 0) : undefined;
+      },
+      tokenizer(src) {
+        const match = /^ {0,3}(?:\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\])[ \t]*(?:\n+|$)/u.exec(src);
+        return match ? { type: "mathBlock", raw: match[0], text: match[1] ?? match[2] ?? "" } : undefined;
+      },
+      renderer: (token) => display(token.text),
+    },
+    {
+      // \( … \), and $ … $ guarded so prices ("$5 and $10") stay text; a
+      // display form written inside a paragraph renders as display math.
+      name: "mathInline",
+      level: "inline",
+      start(src) {
+        const index = src.search(/\\[([]|(?<!\\)\$/u);
+        return index < 0 ? undefined : index;
+      },
+      tokenizer(src) {
+        const forms = [
+          [/^\\\(([\s\S]+?)\\\)/u, false],
+          [/^\\\[([\s\S]+?)\\\]/u, true],
+          [/^\$\$([\s\S]+?)\$\$/u, true],
+          [/^\$(?=\S)((?:\\.|[^\\$\n])+?)(?<=\S)\$(?!\d)/u, false],
+        ];
+        for (const [pattern, displayMode] of forms) {
+          const match = pattern.exec(src);
+          if (match) return { type: "mathInline", raw: match[0], text: match[1], displayMode };
+        }
+        return undefined;
+      },
+      renderer: (token) => token.displayMode ? display(token.text) : renderMath(token.text, false, where),
+    },
+  ];
+}
+
+const KATEX_DIST = dirname(createRequire(import.meta.url).resolve("katex/dist/katex.min.css"));
+
+/**
+ * KaTeX's stylesheet and fonts, served from the site's own theme. Only the
+ * WOFF2 fonts ship (every current browser uses them), and the stylesheet's
+ * older WOFF/TTF fallbacks are dropped so it never requests a missing file.
+ */
+async function installMathAssets(outDir) {
+  const target = join(outDir, "theme", "katex");
+  await mkdir(join(target, "fonts"), { recursive: true });
+  const css = (await readFile(join(KATEX_DIST, "katex.min.css"), "utf8"))
+    .replace(/,\s*url\(fonts\/[^)]+\.(?:woff|ttf)\)\s*format\("(?:woff|truetype)"\)/gu, "");
+  await writeFile(join(target, "katex.min.css"), css, "utf8");
+  for (const font of await readdir(join(KATEX_DIST, "fonts"))) {
+    if (font.endsWith(".woff2")) await cp(join(KATEX_DIST, "fonts", font), join(target, "fonts", font));
+  }
+  await writeFile(join(target, "math.css"),
+    ".math-display{overflow-x:auto;overflow-y:hidden;margin:1.25em 0;text-align:center}\n.katex{font-size:1.05em}\n", "utf8");
+}
+
+function renderMarkdown(markdown, baseUrl, where = "Page") {
+  const parser = new Marked({ extensions: mathExtensions(where) });
+  const html = parser.parse(String(markdown ?? ""), {
     renderer: createRenderer(baseUrl),
     gfm: true,
     breaks: false,
@@ -298,7 +381,7 @@ async function loadPost(filePath, options) {
     coverAlt: coverAlt || undefined,
     gallery,
     body: parsed.content,
-    html: renderMarkdown(parsed.content, options.baseUrl),
+    html: renderMarkdown(parsed.content, options.baseUrl, `Post ${slug}`),
     readingMinutes: readingMinutes(parsed.content),
   };
 }
@@ -323,7 +406,7 @@ async function loadPage(filePath, options) {
   const parsed = matter(await readFile(filePath, "utf8"));
   return {
     title: String(parsed.data?.title ?? "Page"),
-    html: renderMarkdown(parsed.content, options.baseUrl),
+    html: renderMarkdown(parsed.content, options.baseUrl, `Page ${basename(filePath)}`),
   };
 }
 
@@ -434,6 +517,7 @@ function pageShell(options, { title, description, canonicalPath, bodyClass = "",
 <link rel="canonical" href="${escapeAttribute(canonical)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(site.title)}" href="${options.baseUrl}feed.xml">
 <link rel="stylesheet" href="${options.baseUrl}theme/style.css">
+${content.includes('class="katex') ? `<link rel="stylesheet" href="${options.baseUrl}theme/katex/katex.min.css">\n<link rel="stylesheet" href="${options.baseUrl}theme/katex/math.css">` : ""}
 <meta property="og:type" content="website">
 <meta property="og:title" content="${escapeAttribute(title)}">
 <meta property="og:description" content="${escapeAttribute(description ?? site.description ?? "")}">
@@ -824,6 +908,7 @@ export async function buildBlog(options = {}) {
   await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
   await cp(themeDir, join(outDir, "theme"), { recursive: true });
+  await installMathAssets(outDir);
   await cp(assetsDir, join(outDir, "assets"), { recursive: true });
 
   const pages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
