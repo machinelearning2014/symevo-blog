@@ -33,5 +33,12 @@
       "label": "SYMEVO",
       "href": "https://www.deepthought.com.au/"
     }
-  ]
+  ],
+  "comments": {
+    "provider": "giscus",
+    "repo": "machinelearning2014/symevo-blog",
+    "repoId": "R_kgDOVWudFQ",
+    "category": "Announcements",
+    "categoryId": "DIC_kwDOVWudFc4DKHB8"
+  }
 }
