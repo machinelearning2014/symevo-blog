@@ -1,9 +1,26 @@
 ---
-title: "Mankind in Fifty Years: What the Evidence Actually Supports"
-date: "2026-11-18T04:23:55.820Z"
-summary: "A researched look at humanity around 2076. Four aggregate trends survive scrutiny — the end of the population growth regime, longer but sicker lives, policy-contingent mass displacement, and near-total urbanisation. Four more decide how that aggregate is actually lived: daily life built on infrastructure, work transformed rather than eliminated, a technology quantified for 2030 and explicitly unquantified beyond it, and thinly measured social attitudes. Each carries a different kind of evidence, and the honest forecast keeps them apart."
-labels: ["future of humanity", "demography", "climate", "longevity", "urbanisation", "artificial intelligence", "employment", "forecasting", "evidence"]
-draft: true
+title: 'Mankind in Fifty Years: What the Evidence Actually Supports'
+date: '2026-11-18T04:47:22.765Z'
+summary: >-
+  A researched look at humanity around 2076. Four aggregate trends survive
+  scrutiny — the end of the population growth regime, longer but sicker lives,
+  policy-contingent mass displacement, and near-total urbanisation. Four more
+  decide how that aggregate is actually lived: daily life built on
+  infrastructure, work transformed rather than eliminated, a technology
+  quantified for 2030 and explicitly unquantified beyond it, and thinly measured
+  social attitudes. Each carries a different kind of evidence, and the honest
+  forecast keeps them apart.
+labels:
+  - future of humanity
+  - demography
+  - climate
+  - longevity
+  - urbanisation
+  - artificial intelligence
+  - employment
+  - forecasting
+  - evidence
+draft: false
 ---
 Predictions about the year 2076 usually arrive in one of two flavours: a gleaming utopia of abundance, or a dust-coloured collapse. Both are cheap, because both are unfalsifiable at the point of sale. Fifty years is long enough that almost any story can be told about it, and short enough that the people writing the stories will not be around to be corrected.
 
