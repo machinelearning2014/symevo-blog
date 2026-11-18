@@ -1,9 +1,22 @@
 ---
-title: "Mankind in Fifty Years: What the Evidence Actually Supports"
-date: "2026-11-18T04:23:41.627Z"
-summary: "A researched look at humanity around 2076. Four trends survive scrutiny — the end of the population growth regime, longer but sicker lives, policy-contingent mass displacement, and near-total urbanisation — and each carries a very different confidence level. The honest forecast is a split one: some features of the next half century are near-structural, and others are still being decided in this decade."
-labels: ["future of humanity", "demography", "climate", "longevity", "urbanisation", "forecasting", "evidence"]
-draft: true
+title: 'Mankind in Fifty Years: What the Evidence Actually Supports'
+date: '2026-11-18T04:23:55.820Z'
+summary: >-
+  A researched look at humanity around 2076. Four trends survive scrutiny — the
+  end of the population growth regime, longer but sicker lives,
+  policy-contingent mass displacement, and near-total urbanisation — and each
+  carries a very different confidence level. The honest forecast is a split one:
+  some features of the next half century are near-structural, and others are
+  still being decided in this decade.
+labels:
+  - future of humanity
+  - demography
+  - climate
+  - longevity
+  - urbanisation
+  - forecasting
+  - evidence
+draft: false
 ---
 Predictions about the year 2076 usually arrive in one of two flavours: a gleaming utopia of abundance, or a dust-coloured collapse. Both are cheap, because both are unfalsifiable at the point of sale. Fifty years is long enough that almost any story can be told about it, and short enough that the people writing the stories will not be around to be corrected.
 
