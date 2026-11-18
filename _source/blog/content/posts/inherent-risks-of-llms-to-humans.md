@@ -1,9 +1,20 @@
 ---
-title: "The Inherent Risks of LLMs to Humans: A Structural Account"
-date: "2026-11-18T23:18:01.427Z"
-summary: "LLM risk is not a list of hypothetical accidents. It falls out of four structural properties: they are trained to imitate human text, they compress uncertainty into confident prose, they are cheap to deploy at scales humans cannot audit, and they mediate what we read, decide, and believe. This post separates what is inherent to the approach from what is a fixable engineering gap, and says which risks survive every mitigation we can currently name."
-labels: ["AI safety", "LLMs", "risk", "epistemics", "AI governance"]
-draft: true
+title: 'The Inherent Risks of LLMs to Humans: A Structural Account'
+date: '2026-11-18T23:18:16.753Z'
+summary: >-
+  LLM risk is not a list of hypothetical accidents. It falls out of four
+  structural properties: they are trained to imitate human text, they compress
+  uncertainty into confident prose, they are cheap to deploy at scales humans
+  cannot audit, and they mediate what we read, decide, and believe. This post
+  separates what is inherent to the approach from what is a fixable engineering
+  gap, and says which risks survive every mitigation we can currently name.
+labels:
+  - AI safety
+  - LLMs
+  - risk
+  - epistemics
+  - AI governance
+draft: false
 ---
 Most writing about LLM risk is a list. Bias, misinformation, job loss, misuse, existential risk — an inventory with no rule that generates it. That is why the discourse keeps talking past itself: a list can always be added to or argued down item by item.
 

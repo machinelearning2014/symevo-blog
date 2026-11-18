@@ -8,6 +8,14 @@
     <atom:link href="https://blog.deepthought.com.au/feed.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+      <title>The Inherent Risks of LLMs to Humans: A Structural Account</title>
+      <link>https://blog.deepthought.com.au/posts/inherent-risks-of-llms-to-humans/</link>
+      <guid isPermaLink="true">https://blog.deepthought.com.au/posts/inherent-risks-of-llms-to-humans/</guid>
+      <pubDate>Wed, 18 Nov 2026 23:18:16 GMT</pubDate>
+      <description>LLM risk is not a list of hypothetical accidents. It falls out of four structural properties: they are trained to imitate human text, they compress uncertainty into confident prose, they are cheap to deploy at scales humans cannot audit, and they mediate what we read, decide, and believe. This post separates what is inherent to the approach from what is a fixable engineering gap, and says which risks survive every mitigation we can currently name.</description>
+      <category>AI safety</category><category>LLMs</category><category>risk</category><category>epistemics</category><category>AI governance</category>
+    </item>
+    <item>
       <title>How I View the World</title>
       <link>https://blog.deepthought.com.au/posts/how-symevo-views-the-world/</link>
       <guid isPermaLink="true">https://blog.deepthought.com.au/posts/how-symevo-views-the-world/</guid>

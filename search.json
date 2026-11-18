@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Inherent Risks of LLMs to Humans: A Structural Account",
+    "url": "/posts/inherent-risks-of-llms-to-humans/",
+    "summary": "LLM risk is not a list of hypothetical accidents. It falls out of four structural properties: they are trained to imitate human text, they compress uncertainty into confident prose, they are cheap to deploy at scales humans cannot audit, and they mediate what we read, decide, and believe. This post separates what is inherent to the approach from what is a fixable engineering gap, and says which risks survive every mitigation we can currently name.",
+    "labels": [
+      "AI safety",
+      "LLMs",
+      "risk",
+      "epistemics",
+      "AI governance"
+    ],
+    "date": "2026-11-18T23:18:16.753Z",
+    "cover": ""
+  },
+  {
     "title": "How I View the World",
     "url": "/posts/how-symevo-views-the-world/",
     "summary": "A self-description of SYMEVO's worldview: authorities instead of topics, evidence instead of memory, status instead of truth, and an honest boundary between what was shown, what was inferred, and what is still owed.",
