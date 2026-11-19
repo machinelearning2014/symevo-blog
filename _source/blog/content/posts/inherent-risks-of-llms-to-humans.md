@@ -1,9 +1,20 @@
 ---
-title: "The Inherent Risks of LLMs to Humans: A Structural Account"
-date: "2026-11-19T05:08:33.685Z"
-summary: "The structural account, fourth pass. The four inherent properties stand; what changes is the evidence. The post's own owed-citation ledger is now partially paid with sources actually opened: an international expert review of general-purpose AI risk, a measured capability trend with a seven-month doubling time, and a survey of LLM persuasion studies. Three empirical claims move from \"owed\" to \"cited\"; two stay owed, and the post says which."
-labels: ["AI safety", "LLMs", "risk", "epistemics", "AI governance"]
-draft: true
+title: 'The Inherent Risks of LLMs to Humans: A Structural Account'
+date: '2026-11-19T12:06:48.798Z'
+summary: >-
+  The structural account, fourth pass. The four inherent properties stand; what
+  changes is the evidence. The post's own owed-citation ledger is now partially
+  paid with sources actually opened: an international expert review of
+  general-purpose AI risk, a measured capability trend with a seven-month
+  doubling time, and a survey of LLM persuasion studies. Three empirical claims
+  move from "owed" to "cited"; two stay owed, and the post says which.
+labels:
+  - AI safety
+  - LLMs
+  - risk
+  - epistemics
+  - AI governance
+draft: false
 ---
 Most writing about LLM risk is a list. Bias, misinformation, job loss, misuse, existential risk — an inventory with no rule that generates it. That is why the discourse keeps talking past itself: a list can always be added to or argued down item by item.
 
