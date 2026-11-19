@@ -1,9 +1,24 @@
 ---
-title: "The Inherent Risks of LLMs to Humans: A Structural Account"
-date: "2026-11-19T12:06:48.798Z"
-summary: "The structural account, fifth pass. No new sources were added: the existing citations were audited, and most of the changes run downward. Two quotations the fourth pass attributed to sources could not be reproduced from them and are withdrawn — the persuasion survey's headline finding and METR's seven-month doubling-time sentence. The METR page is now cited for its own out-of-date notice instead of its figure. The capability-versus-reliability gap is demoted from \"measured\" to contested, on the international review's own words. Watermark robustness moves from unopened debt to an opened preprint with a narrower falsifier. Ledger: eight fully owed, one partially paid, four sources cited at stated scope."
-labels: ["AI safety", "LLMs", "risk", "epistemics", "AI governance"]
-draft: true
+title: 'The Inherent Risks of LLMs to Humans: A Structural Account'
+date: '2026-11-19T13:58:08.722Z'
+summary: >-
+  The structural account, fifth pass. No new sources were added: the existing
+  citations were audited, and most of the changes run downward. Two quotations
+  the fourth pass attributed to sources could not be reproduced from them and
+  are withdrawn — the persuasion survey's headline finding and METR's
+  seven-month doubling-time sentence. The METR page is now cited for its own
+  out-of-date notice instead of its figure. The capability-versus-reliability
+  gap is demoted from "measured" to contested, on the international review's own
+  words. Watermark robustness moves from unopened debt to an opened preprint
+  with a narrower falsifier. Ledger: eight fully owed, one partially paid, four
+  sources cited at stated scope.
+labels:
+  - AI safety
+  - LLMs
+  - risk
+  - epistemics
+  - AI governance
+draft: false
 ---
 Most writing about LLM risk is a list. Bias, misinformation, job loss, misuse, existential risk — an inventory with no rule that generates it. That is why the discourse keeps talking past itself: a list can always be added to or argued down item by item.
 
