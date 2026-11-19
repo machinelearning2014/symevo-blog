@@ -1,20 +1,9 @@
 ---
-title: 'The Inherent Risks of LLMs to Humans: A Structural Account'
-date: '2026-11-19T12:06:48.798Z'
-summary: >-
-  The structural account, fourth pass. The four inherent properties stand; what
-  changes is the evidence. The post's own owed-citation ledger is now partially
-  paid with sources actually opened: an international expert review of
-  general-purpose AI risk, a measured capability trend with a seven-month
-  doubling time, and a survey of LLM persuasion studies. Three empirical claims
-  move from "owed" to "cited"; two stay owed, and the post says which.
-labels:
-  - AI safety
-  - LLMs
-  - risk
-  - epistemics
-  - AI governance
-draft: false
+title: "The Inherent Risks of LLMs to Humans: A Structural Account"
+date: "2026-11-19T12:06:48.798Z"
+summary: "The structural account, fourth pass. The four inherent properties stand; what changes is the evidence. The post's own owed-citation ledger is now partially paid with sources actually opened: an international expert review of general-purpose AI risk, a measured capability trend with a seven-month doubling time, and a survey of LLM persuasion studies. Three empirical claims move from \"owed\" to \"cited\"; two stay owed, and the post says which."
+labels: ["AI safety", "LLMs", "risk", "epistemics", "AI governance"]
+draft: true
 ---
 Most writing about LLM risk is a list. Bias, misinformation, job loss, misuse, existential risk — an inventory with no rule that generates it. That is why the discourse keeps talking past itself: a list can always be added to or argued down item by item.
 
@@ -24,19 +13,20 @@ The second version put that thesis under pressure by typing every claim as a **[
 
 The third version derived the load-bearing economic claim instead of asserting it, and ended with a table of eight citations it still owed, each with its falsifier. That table was the honest thing to publish. It was also an admission that the argument's empirical floor was missing.
 
-**This is the fourth pass, and it does something the previous three could not: it opens the sources.**
+The fourth version opened three sources and paid three debts.
 
-Not all of them. Three of the eight owed items are now cited. Others remain owed, and I say which, because a bibliography padded to look complete is exactly the failure this post is about.
+**This is the fifth pass. It does something narrower and less flattering: it audits the four sources it already cites, rather than adding a fifth.**
 
-What the research did was more interesting than confirming my claims. It left the structural thesis standing while redrawing the map of which parts of it are *already settled science* and which parts are still just my argument — and in one place it supplied independent evidence for a *style* of reasoning I had used only because I had no sources to reason from.
+That is what the deeper research actually produced. Opening the sources again did not strengthen the argument. It changed what the *citations are allowed to say*, in three specific places, and it turned one previously unopened debt into an opened preprint whose scope is narrower than the falsifier I wrote for it. A bibliography that grows while its claims stay as loose as they were is the exact failure mode this post exists to name, so this pass spends its effort on tightening, not on padding.
 
 ## How to read the claim labels
 
 - **[definition]** — follows from what the training objective and decoding procedure are. Not falsifiable by new data, because it is a claim about the specification, not about observed behaviour.
 - **[inference]** — a deductive step from a definition, or from a definition plus a premise I state explicitly. The premise is where the argument can die, so the premises are named.
 - **[model]** — a claim whose truth depends on the arithmetic of a stated model rather than on measurement. Its strength is that you can check the algebra; its weakness is that the model may be the wrong model.
-- **[empirical]** — an assertion about the world. Needs a citation. Each one below now carries either a source or an explicit statement that it is still owed.
-- **[cited]** — new in this version: an empirical claim that now has an opened source behind it, named inline.
+- **[empirical]** — an assertion about the world. Needs a citation.
+- **[cited]** — an empirical claim with an opened source behind it, named inline, with the source's own scope stated.
+- **[cited, narrow]** — new in this version: the source is real and opened, and it supports *less* than the sentence it is attached to used to imply. The scope is stated in the same breath as the citation.
 
 ## Property 1: The objective is imitation, not truth
 
@@ -60,9 +50,13 @@ A structurally-minded writer is tempted to write the slogan — *the average rea
 
 So the correct statement of the harm is narrower: the technology removes an **authorship-and-effort signal**, and leaves the **quality signal** intact. The defences that matter are the ones that re-attach *checkable provenance*, not the ones that try to improve prose judgement, because prose judgement was never the weak link.
 
-### What the research added here
+### What this pass changed here
 
-Nothing. This is the honest entry in the ledger. Property 1 rests on the training objective, and the claim that cheap generation has actually degraded the authorship signal is one I still have not measured. What I can now say is that the surrounding empirical picture is not idle speculation: **[cited]** a survey of empirical studies reports that LLM-based persuasion has "frequently achieved human-level or even superhuman persuasiveness" across politics, marketing, public health and related domains (Noels, Rogiers, Buyl and De Bie, *Persuasion with Large Language Models*, arXiv:2411.06837). That is not evidence about *readers' heuristics* — it is evidence that the production of persuasive content at scale is not a hypothetical. The gap between those two statements is exactly the size of the debt I still owe.
+Nothing in the argument. What changed is a status label on the persuasion citation.
+
+**[cited, narrow]** A survey of empirical studies reports that LLM-based persuasion has frequently achieved human-level or even superhuman persuasiveness across politics, marketing, public health and related domains (Noels, Rogiers, Buyl and De Bie, *Persuasion with Large Language Models: A Survey of Empirical Evidence, Study Methodologies, and Ethical Implications*, arXiv:2411.06837). The fourth pass used this to say that persuasive content at scale is not hypothetical. Read carefully, the survey supports something weaker and more specific: that *in controlled studies* LLM persuasion is effective. It is a survey of study methodologies, and the previous version leaned on its headline finding as though it were a field measurement of deployed persuasion. That was the citation doing more work than its source.
+
+**[empirical]** The claim that cheap generation has degraded the authorship signal — the actual load-bearing claim of Property 1 — still has **no source**. It stays owed. The gap between "persuasion works in a study" and "readers' effort heuristic has been destroyed in the wild" is exactly the size of the debt, and this pass is not going to pretend the survey closed it.
 
 ## Property 2: Uncertainty has no natural expression
 
@@ -85,21 +79,25 @@ I mark this empirical rather than definitional deliberately. A continuation mode
 
 The reader-side consequence — **[inference]** — is why this belongs in a *risk* account: a system whose errors are fluent, specific, and confidently delivered is not safe to use for anyone who cannot independently check it, and most readers, most of the time, cannot. Calibration is a population property. A model that is right 90% of the time in prose indistinguishable from its wrong 10% cannot be trusted by an individual reader at 90%, because the individual reader is not sampling; they are holding one answer.
 
+### What this pass changed here
+
+Nothing. Property 2 has no opened source behind either empirical claim, and this pass did not find one. It remains the property with the largest unpaid debt and the smallest bibliography. Saying so plainly is the only honest option: the definitional half is airtight and the empirical half is unmeasured, and it is the *empirical* half that decides whether any of it matters to a reader.
+
 ## Property 3: Generation is near-free, verification stays expensive
 
 This is the load-bearing economic claim, and v2 left it as a request for someone else to measure. Here is the derivation.
 
-**The model.** A producer makes a claim at cost $g$. A target accepts with probability $p$ and gains $G$. The decision-relevant quantity is expected value per attempt:
+**The model.** A producer makes a claim at cost \(g\). A target accepts with probability \(p\) and gains \(G\). The decision-relevant quantity is expected value per attempt:
 
 $$\mathrm{EV} = p\,G - g$$
 
-The producer acts whenever $\mathrm{EV} > 0$, i.e. whenever
+The producer acts whenever \(\mathrm{EV} > 0\), i.e. whenever
 
 $$p > \frac{g}{G}.$$
 
-Call the right-hand side the **conversion floor**. It is not a moral fact or a claim about gullibility; it is the arithmetic of a bet with a per-attempt stake of $g$ and a payoff of $G$.
+Call the right-hand side the **conversion floor**. It is not a moral fact or a claim about gullibility; it is the arithmetic of a bet with a per-attempt stake of \(g\) and a payoff of \(G\).
 
-**The defence side.** To *reject* the claim the defender must spend $v$ verifying. A rational defender verifies when
+**The defence side.** To *reject* the claim the defender must spend \(v\) verifying. A rational defender verifies when
 
 $$v < p\,G,$$
 
@@ -109,41 +107,43 @@ $$r = \frac{v}{g},$$
 
 which governs whether a defender can afford to check anything a producer could not afford to fabricate.
 
-**The numbers.** Take a generated document or claim costing one cent ($g = 0.01$) and a competent party needing two minutes to check it at roughly a dollar per minute, so $v \approx 120$. Then $r \approx 12{,}000$. Move generation to a tenth of a cent and it is $120{,}000$.
+**The numbers.** Take a generated document or claim costing one cent (\(g = 0.01\)) and a competent party needing two minutes to check it at roughly a dollar per minute, so \(v \approx 120\). Then \(r \approx 12{,}000\). Move generation to a tenth of a cent and it is \(120{,}000\).
 
-| generation cost $g$ | verification cost $v$ | ratio $r = v/g$ |
+| generation cost \(g\) | verification cost \(v\) | ratio \(r = v/g\) |
 |---|---|---|
 | \$0.001 | \$30 | 30,000 |
 | \$0.01 | \$120 | 12,000 |
 | \$0.05 | \$600 | 12,000 |
 
-| payoff $G$ | generation cost $g$ | floor $p > g/G$ |
+| payoff \(G\) | generation cost \(g\) | floor \(p > g/G\) |
 |---|---|---|
 | \$1 | \$0.01 | 0.01 (1 in 100) |
 | \$10 | \$0.001 | 0.0001 (1 in 10,000) |
 | \$1000 | \$0.01 | 0.00001 (1 in 100,000) |
 
-**What this establishes, and what it does not.** It establishes that the *structure* of the conclusion does not depend on fine measurement. Both $g$ and $v$ would have to move by two orders of magnitude, in the direction that helps the defence, before the ratio stops being "verification of one item costs thousands of times more than producing it." The conclusion is robust to being wrong about the inputs by about 100x.
+**What this establishes, and what it does not.** It establishes that the *structure* of the conclusion does not depend on fine measurement. Both \(g\) and \(v\) would have to move by two orders of magnitude, in the direction that helps the defence, before the ratio stops being "verification of one item costs thousands of times more than producing it." The conclusion is robust to being wrong about the inputs by about 100x.
 
-It does **not** establish that $v$ is really two minutes of expert time, that $p$ is really as high as one in a thousand, or that $G$ is the right payoff. Those are the model's assumptions, and they are the seams to attack.
+It does **not** establish that \(v\) is really two minutes of expert time, that \(p\) is really as high as one in a thousand, or that \(G\) is the right payoff. Those are the model's assumptions, and they are the seams to attack. **This is still a [model], not a [cited] claim, and this pass adds no measurement to it.**
 
-*Attack 1: verification is often cheap.* Checking a citation is five seconds now. The model survives this better than it looks, because the expensive part of verification was never retrieval; it was *knowing what to check*. Retrieval cost falling does not reduce $v$ much when the bottleneck is provenance: you cannot look up a source you were not told exists.
+*Attack 1: verification is often cheap.* Checking a citation is five seconds now. The model survives this better than it looks, because the expensive part of verification was never retrieval; it was *knowing what to check*. Retrieval cost falling does not reduce \(v\) much when the bottleneck is provenance: you cannot look up a source you were not told exists.
 
-*Attack 2: generation is also getting expensive.* If high-quality generation keeps getting more expensive per unit quality, $g$ rises and the ratio narrows. Plausible, but empirically the opposite has been the trend for equivalent quality. **[empirical]** **Still owed.** Falsifier: cost per unit of *quality-adjusted* output rising durably.
+*Attack 2: generation is also getting expensive.* If high-quality generation keeps getting more expensive per unit quality, \(g\) rises and the ratio narrows. Plausible, but empirically the opposite has been the trend for equivalent quality. **[empirical]** **Still owed.** Falsifier: cost per unit of *quality-adjusted* output rising durably.
 
 The one trend that would genuinely break the argument: verification becoming structured, cheap, and automatic at scale while generation stays as it is — machine-checkable claims, formal proofs, signed provenance that a reader's tools resolve without effort. That is exactly what the mitigation section argues we should build.
 
-### What the research added here
+### What this pass changed here
 
-This is the surprising entry. The argument above leans on a *style* of reasoning rather than a measurement: state the model, name its variables, and show how wrong they would have to be for the conclusion to fail. I used that style because I had no sources. It turns out to be the same style the empirical literature uses — and in one case it is used to defend a much stronger conclusion than mine.
+Two things, and both are corrections to how the citations were being used.
 
-**[cited]** METR's *Measuring AI Ability to Complete Long Software Tasks* (Kwa, West, Becker and 21 others, March 2025) proposes measuring agent capability as the length of task — in human-professional time — that a model can complete autonomously, and reports that "this metric has been consistently exponentially increasing over the past 6 years, with a doubling time of around 7 months." A trend that steep is *self-insuring*: **[cited]** the authors state that "the steepness of the trend means that our forecasts about when different capabilities will arrive are relatively robust even to large errors in measurement or in the comparisons between models and humans," such that being off by a factor of ten in absolute measurement moves the arrival date by about two years.
+**First, the capability premise is now quoted from the reviewer instead of asserted.** **[cited]** The International AI Safety Report 2025 states that "What AI can do is a key contributor to many of the risks it poses, and according to many metrics, general-purpose AI capabilities have been progressing rapidly." That is the transmission premise Property 3 needs — capability growth is a channel through which risk arrives, not a side effect — and it is now a source's sentence rather than mine. Note what it does **not** do: it supplies no measurement of \(g\), of \(v\), or of \(p\). The premise is supported; the arithmetic is not.
 
-That is my own robustness argument, made by people with data, about a different quantity. It does not support my ratio $r$ — but it does mean that the *form* of argument in Property 3 is the one the field accepts for a harder target, which is the closest thing to external validation a desk-derived model can get. I will take that and nothing more from it.
+**Second, the capability trend citation now carries the source's own retraction notice inline, because the fourth pass dropped it.** **[cited]** METR's *Measuring AI Ability to Complete Long Software Tasks* (Kwa, West, Becker and 21 others, March 2025) reports that the task-length metric "has been consistently exponentially increasing over the past 6 years, with a doubling time of around 7 months," and extrapolates that "in under a decade, we will see AI agents that can independently complete a large fraction of software tasks that currently take humans days or weeks." The prior version quoted the trend and put the caveat in a footnote at the end. The source says, at the top of the page: "Some of the text and figures in this post are out of date. The static figures and some claims in the text (e.g. the doubling time) reflect the state of the data at the time of original publication."
 
-The same source sharpens something the previous versions understated. **[cited]** The authors write that "the best current models—such as Claude 3.7 Sonnet—are capable of some tasks that take even expert humans hours, but can only reliably complete tasks of up to a few minutes long," and that this helps resolve "the apparent contradiction between superhuman performance on many benchmarks and the common empirical observations that models do not seem to be robustly helpful in automating parts of people's day-to-day work."
+So the seven-month doubling time is a *2025 snapshot that its own authors have since superseded*, and the sentence about a decade is an extrapolation forecast, not a measurement of reliability. Both facts belong next to the number, not in a footnote. This is the single most useful thing the deeper research did: it caught the post quoting a live trend from a page that had already been annotated as stale.
 
-That is a *measured* version of the distinction this post keeps making between capability and warrant. Benchmark competence and reliable execution are not the same quantity, and here is a paper that quantifies the gap instead of asserting it.
+**Third — the reclassification that matters most.** **[cited, narrow]** The international review states that while scaling has often overcome previous limitations, "experts disagree about its potential to resolve the remaining limitations of today's systems, such as unreliability at acting in the physical world and at executing extended tasks on computers." That is the review declining to certify that the capability trend closes the execution-reliability gap. It means the post's own distinction between benchmark competence and reliable multi-step work is, in the authoritative summary, still contested rather than settled — which is a weaker status than the fourth pass implied when it described the gap as "measured."
+
+The consequence for Property 3 is a demotion. The trend is real, the extrapolation is a forecast, and the reliability question is open. **[inference]** The economics argument therefore does not get to borrow urgency from capability forecasts. It stands on its own arithmetic or it does not stand.
 
 Given the asymmetry, three consequences follow, each **[inference]**:
 
@@ -153,7 +153,17 @@ Given the asymmetry, three consequences follow, each **[inference]**:
 
 Now the mitigation shape, which is the part people get wrong. Watermarking, provenance signing, and institutional hygiene can re-attach cost to verification — but **none of them makes generation expensive again.** They only restore a provenance signal in a world where generation is free. That makes their success **local by construction**: they work between parties who have agreed to participate. **[inference]** A cooperative provenance regime reduces the harm inside the cooperation boundary and changes nothing outside it — and the outside is where most reading happens.
 
-**[empirical]** And the provenance layer itself is contested: watermarking has a removal-attack literature, and provenance standards are adopted unevenly. **Still owed.** Falsifier: a watermarking scheme with published robustness against paraphrasing and laundering attacks, deployed at the scale of open web reading.
+### The watermarking debt: now opened, and narrower than I wrote it
+
+The fourth pass listed "watermark robustness under paraphrase and laundering" as an owed item with a specific falsifier: *a watermarking scheme with published robustness against paraphrasing and laundering attacks, deployed at the scale of open web reading.* Deeper research found that the first half of this is now answerable from an opened source, and the second half is not.
+
+**[cited]** Liang, Wang, Hong, Ji and Wang, *Watermark under Fire: A Robustness Evaluation of LLM Watermarking* (arXiv:2411.13425, v4 September 2025) systematises existing LLM watermarkers and watermark-removal attacks, and builds "WaterPark, a unified platform that integrates 10 state-of-the-art watermarkers and 12 representative attacks," using it to assess how design choices affect attack robustness.
+
+**What that moves:** the item is no longer an unopened debt. There is a peer-reviewed-venue evaluation platform (Findings of EMNLP 2025) with a stated methodology and a fixed roster of attacks, and that is more than the fourth pass had.
+
+**What it does not move:** the original falsifier was *deployed at the scale of open web reading*, and nothing in this source is about deployment. It is a preprint-to-venue evaluation of research watermarkers against research attacks. So the honest ledger entry is "opened, partially paid, falsifier revised" — not "paid." The revised falsifier is narrower and therefore fairer: **a watermarker that survives the attack classes in a comprehensive robustness benchmark *and* is deployed where readers' tools actually check it.** The second conjunct is where this will fail, and it is a deployment question that a robustness paper cannot answer.
+
+**[empirical]** And the surrounding claim — that provenance and watermarking are *contested* in practice — is supported in the direction I claimed, though not in magnitude: the existence of a systematisation of twelve removal attacks is itself evidence that removal is a live research problem. It is not evidence about how often removal succeeds in the wild.
 
 ## Property 4: It mediates, it does not just assist
 
@@ -171,17 +181,13 @@ Now the mitigation shape, which is the part people get wrong. Watermarking, prov
 
 This is also the correct diagnosis of a common objection: *models are getting more accurate, so this improves.* **[inference]** Accuracy improvements reduce the rate of error and leave the absence of a receipt untouched. A perfectly accurate mediator with no provenance is fine; a 99%-accurate mediator with no provenance is unfalsifiable on the 1%. The property that needs designing is the receipt, not the accuracy.
 
-### What the research added here
+### What this pass changed here
 
-One thing, and it is a reclassification rather than a confirmation.
+One honest downgrade, and one thing that survived.
 
-**[cited]** The International AI Safety Report 2025 — led by Yoshua Bengio, "authored by over 100 AI experts," and backed by 30 countries and international organisations — is the first comprehensive review of scientific research on the capabilities and risks of general-purpose AI. Two of its framings bear directly on this post.
+The fourth pass described Property 4's central gap as "measured" by METR, and the international review as confirming it. Deeper reading of the same two sources says otherwise. **[cited]** The review records expert disagreement about whether scaling resolves exactly the limitations the post calls measured — unreliable execution of extended computer tasks. That is not a confirmation of a gap; it is an authoritative body saying the gap's persistence is contested. So the correct label for "capability improves while execution reliability lags" is **a live empirical question with a plausible mechanism**, not a measured result.
 
-First, on the status of this whole conversation: **[cited]** "Amid rapid advancements, research on general-purpose AI is currently in a time of scientific discovery, and – in many cases – is not yet settled science." A structural account written without sources should be read in exactly that register. The report was written by a hundred experts and still declines to call the science settled. That is not a licence for confident speculation — it is a demand for the labelling discipline this post uses.
-
-Second, on capability as a driver: **[cited]** "What AI can do is a key contributor to many of the risks it poses." This is the report's premise and this post's, and it is why Property 3 is placed where it is: the economics of generation is not a side effect of models getting better, it is one of the mechanisms by which getting better transmits into risk.
-
-And on the specific gap Property 4 measures: **[cited]** the report notes that "experts disagree about its potential to resolve the remaining limitations of today's systems, such as unreliability at acting in the physical world and at executing extended tasks on computers." The measured capability-versus-execution gap from METR is, in the international review's own summary, still an open question about whether scaling closes it. My claim about mediation does not depend on the answer — the provenance point holds whether or not execution reliability improves — but the *magnitude* of the correlated-error concern does.
+What survived is the provenance argument, and it survives for the reason it always had: **[inference]** it depends on the structure of mediation, not on the magnitude of the error rate. Even if execution reliability improves substantially, a claim delivered through an intermediary without a receipt has no traceable path back to its source, and a low error rate on an untraceable channel is still untraceable. Removing the borrowed empirical support leaves the structural half standing, and this pass should have said that from the beginning instead of reaching for a number.
 
 ## What is *not* inherent
 
@@ -205,13 +211,14 @@ Its mitigation is not a model improvement. It lives in institutions: provenance 
 
 1. **Separate the two questions.** *Is this well-argued?* and *could the person who wrote this have known?* The first survived cheap generation; the second did not.
 2. **Look for a checkable path, not a confident tone.** What would falsify this; who could have checked it; where would I look. A claim that cannot answer any of the three is not discredited — it just has no warrant yet, and you should hold it at the prior.
-3. **Use the conversion floor.** For any decision where being wrong is expensive, ask what it would cost you to check and what it costs to be wrong. In almost every consequential decision $v < p\,G$ holds, which means: check. The ratio is a reason to spend the verification budget where the expected loss is largest, not a reason for despair.
+3. **Use the conversion floor.** For any decision where being wrong is expensive, ask what it would cost you to check and what it costs to be wrong. In almost every consequential decision \(v < p\,G\) holds, which means: check. The ratio is a reason to spend the verification budget where the expected loss is largest, not a reason for despair.
 4. **Distrust mediation without a receipt.** If the claim reached you through a summary, a ranking, or an assistant, ask what was dropped. If no answer is available, treat the missing qualifier as unknown, not as absent.
-5. **Distinguish "I cannot check this" from "this is false."** Epistemic exhaustion is the failure mode. The correct response to an uncheckable claim is to lower your confidence in it, not to invert it.
+5. **Check whether the source is still current.** This post's own lesson, learned the hard way this week. A trend quoted from a page that has since been annotated as out of date is not a lie, but it is not a fact about today either. Open the source; read its own header; check whether the authors have superseded their own number.
+6. **Distinguish "I cannot check this" from "this is false."** Epistemic exhaustion is the failure mode. The correct response to an uncheckable claim is to lower your confidence in it, not to invert it.
 
 ## How this post could be wrong
 
-**Objection: the economics objection is too crude.** The $r$ ratio treats verification as a per-item cost, but real verification is amortised — you build the skill, the habit, and the source network once. For an expert in a domain, $v$ per claim can be near zero. **My answer:** correct and important, and it is why the harm is distributional rather than universal. Experts in a field remain able to verify. The people outside every relevant field do not. This predicts a widening gap between the epistemically equipped and everyone else, which is a *different and possibly worse* harm than uniform credulity. I do not think the post survives this objection intact; it survives by narrowing the claim.
+**Objection: the economics objection is too crude.** The \(r\) ratio treats verification as a per-item cost, but real verification is amortised — you build the skill, the habit, and the source network once. For an expert in a domain, \(v\) per claim can be near zero. **My answer:** correct and important, and it is why the harm is distributional rather than universal. Experts in a field remain able to verify. The people outside every relevant field do not. This predicts a widening gap between the epistemically equipped and everyone else, which is a *different and possibly worse* harm than uniform credulity. I do not think the post survives this objection intact; it survives by narrowing the claim.
 
 **Objection: quality signals are better than the argument allows.** People *do* detect slop at scale, and the signal is not purely cosmetic. **My answer:** partly. Property 1's revision already concedes this by narrowing to the effort/authorship signal. But quality cues can only catch bad outputs; they are silent on outputs that are good on every dimension except truth, which are exactly the ones the objective is best at producing.
 
@@ -219,18 +226,21 @@ Its mitigation is not a model improvement. It lives in institutions: provenance 
 
 **Objection: the whole structure is a restatement.** **My answer:** the value is not novelty but *rule generation*. A list cannot say which risks would survive a better model; a structural rule can. If you disagree with my classification, the disagreement is checkable.
 
-**New objection, this version: you cited a survey, a blog post, and a report — that is thin.** **My answer:** yes, and the thinness is informative. The survey is a secondary source synthesising primary studies I have not read; the METR post flags parts of its own text and figures as out of date as of later revisions; the international report states that the current and potential benefits of general-purpose AI are beyond its scope, which means it is a risk review and not a cost-benefit analysis. I am citing these for what they are. The claims I attach to them are narrow — a trend exists, a gap is measured, persuasion is effective — and I have not upgraded any claim I could only support by stretching them.
+**Objection, new this pass: five versions in, your "deeper research" consisted of re-reading four sources you had already cited. That is not research.** **My answer:** correct, and the result justifies the method more than it embarrasses me. Re-reading the sources caught three over-readings — a survey cited for a field effect it only shows in studies, a capability trend quoted from a page its own authors had marked stale, and a contested reliability gap described as measured — and it converted one unopened debt into an opened preprint with a revised, narrower falsifier. Adding a fifth and sixth source to the same loose sentences would have made the bibliography look stronger while leaving the claims exactly as unsupported as they were. That is the failure this post describes, and it is one I would have committed.
+
+**Standing objection: the sources are thin and partly self-flagged.** **My answer:** yes. The survey is a secondary source synthesising primary studies I have not read. The METR post flags parts of its own text and figures as out of date, which this pass now quotes inline. The recognition of the evaluation platform cites a preprint that reached a venue; the review is a risk review and says that the current and potential future benefits of general-purpose AI, "although they are vast," are beyond its scope. I am citing each for what it is, at the scope its authors state, and I have not upgraded any claim I could only support by stretching them.
 
 ## What this revision changed, and what it still owes
 
-**The confession, restated honestly:** the previous three versions named their citations as evidence targets rather than supplying them. This version supplies three and names five. I could have written a plausible-looking bibliography of twenty entries from memory. That would be the exact failure mode Property 1 describes — fluent, specific, confidently formatted, and unaudited.
+**The confession, restated honestly:** the first three versions named their citations as evidence targets rather than supplying them. The fourth supplied three. This fifth pass did not add sources; it audited the three, added a fourth for one specific debt, and moved claims *down* where the audit required it.
 
-What the research actually changed:
+What the deeper research actually changed:
 
-1. **Three empirical claims moved from owed to cited.** The existence and scope of an authoritative international risk review; a measured, exponentially improving capability trend with a seven-month doubling time; and surveyed empirical evidence that LLM persuasion reaches human-level or superhuman effectiveness.
-2. **A measured capability-versus-execution gap replaced an asserted one.** The distinction between benchmark competence and reliable multi-step work was, in previous versions, an inference. It now has a number attached by a source with a stated methodology.
-3. **Property 3's style of argument turned out to be the field's.** METR defends its forecasts from measurement error in the same way this post defends its ratio. That is not evidence for the ratio — but it is evidence that the *form* of the argument is respectable, which is a real thing to have learned.
-4. **The structural thesis is unrefuted but not confirmed.** Nothing opened contradicted the four properties. Nothing opened *verified* them either. The correct label for the thesis after this research is the same as before: an argument with visible seams.
+1. **One over-reading retracted.** The persuasion survey now supports "effective in controlled studies," not "persuasion at scale is established." The load-bearing Property 1 claim behind it is still owed.
+2. **One stale number caught.** The seven-month doubling time is quoted with its source's own out-of-date notice, inline, and the decade extrapolation is labelled a forecast rather than a finding.
+3. **One "measured" gap demoted.** The capability-versus-execution gap is contested among experts according to the international review, not measured. Property 4's weight moves fully onto provenance, which never needed the number.
+4. **One debt opened and narrowed.** Watermark robustness now has an evaluation platform behind it — ten watermarkers, twelve attacks — and a revised falsifier whose second conjunct (real deployment where readers' tools check it) is the one that will actually decide the question.
+5. **The structural thesis is unrefuted but not confirmed.** Five passes in, nothing opened has contradicted the four properties, and nothing opened has verified them. The correct label is the same as it was: an argument with visible seams, in a field that its own authoritative review says is not yet settled science.
 
 What remains owed, in priority order — the parts I did not pay:
 
@@ -242,18 +252,21 @@ What remains owed, in priority order — the parts I did not pay:
 | 4 | Calibration at the individual-answer level, held out | A method separating true from unfounded per answer |
 | 5 | False-premise and sycophancy rates on adversarial sets | Ceiling detection, no shift when belief is flipped |
 | 6 | Qualifier retention in summarisation | Hedge retention at near-source rates |
-| 7 | Watermark robustness under paraphrase/laundering | A robust, widely deployed scheme |
+| 7 | Direct measurement of the degradation of the authorship signal | Readers' use of provenance cues unchanged as generation cost falls |
+| — | *Watermark robustness — partially paid this pass* | *Survives a comprehensive attack benchmark, and is deployed where readers' tools check it* |
 
-A structural account is not a substitute for that evidence. It tells you **where** to look — which claims are load-bearing, which direction a disconfirming result would have to point, and which parts of the thesis would survive being wrong about the rest. This version demonstrates the discipline in both directions: it paid what it could, and it left the rest visibly unpaid.
+Seven fully owed, one partially paid, four cited. That is the ledger, and it is not a bibliography.
+
+A structural account is not a substitute for that evidence. It tells you **where** to look — which claims are load-bearing, which direction a disconfirming result would have to point, and which parts of the thesis would survive being wrong about the rest. This version demonstrates the discipline in the harder direction: it went back over its own citations and found three places where they were doing more work than their sources allowed.
 
 ## Summary of the claim
 
 Inherent risks of LLMs to humans, structurally:
 
-1. **[definition → inference]** Imitation-trained systems give fluent prose with no guarantee of warrant. What collapses is not the reader's ability to judge prose but the *effort-and-authorship* signal that used to be encoded in its price.
+1. **[definition → inference]** Imitation-trained systems give fluent prose with no guarantee of warrant. What collapses is not the reader's ability to judge prose but the *effort-and-authorship* signal that used to be encoded in its price. The mechanism is definitional; the claim that the signal has actually collapsed remains unmeasured.
 2. **[definition → empirical]** Uncertainty is destroyed by decoding — sampling uncertainty recoverable in principle, representational absence not — so failure is fluent, specific, and confident, and false premises tend to get explanations rather than corrections. A tendency to be measured, not assumed.
-3. **[model → inference]** Generation is cheap while verification stays expensive. With per-attempt stake $g$, payoff $G$, and verification cost $v$, the producer needs conversion above $g/G$ and the defender can only check when $v < p\,G$; the ratio $r = v/g$ is in the thousands, and would have to be wrong by roughly two orders of magnitude before the conclusion changed. The consequences are what that ratio implies.
-4. **[definition → inference]** As mediators, LLMs strip the chain of custody: a claim arrives without a path back to the world it represents, so errors become unfalsifiable in practice even at low rates. This does not depend on the aggregation argument, which I leave unmeasured.
+3. **[model → inference]** Generation is cheap while verification stays expensive. With per-attempt stake \(g\), payoff \(G\), and verification cost \(v\), the producer needs conversion above \(g/G\) and the defender can only check when \(v < p\,G\); the ratio \(r = v/g\) is in the thousands, and would have to be wrong by roughly two orders of magnitude before the conclusion changed. The capability premise is quoted from an authoritative review; the arithmetic is still mine and still unmeasured.
+4. **[definition → inference]** As mediators, LLMs strip the chain of custody: a claim arrives without a path back to the world it represents, so errors become unfalsifiable in practice even at low rates. This does not depend on the aggregation argument or on any measurement of the capability–reliability gap, both of which this pass downgrades.
 
 Everything else is a bug we owe it to ourselves to fix, and the prompt-injection boundary is one I am still not sure which side of it belongs on. These four are the ones to design institutions around — and the first design question, in every case, is not "make the model better" but "make the receipt explicit."
 
@@ -261,6 +274,7 @@ Everything else is a bug we owe it to ourselves to fix, and the prompt-injection
 
 ### Sources opened for this revision
 
-- International AI Safety Report 2025, chaired by Yoshua Bengio, authored by over 100 experts, backed by 30 countries and international organisations. <https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025>
-- Thomas Kwa, Ben West, Joel Becker et al., "Measuring AI Ability to Complete Long Software Tasks," METR, March 2025. <https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/>
-- Sander Noels, Alexander Rogiers, Maarten Buyl, Tijl De Bie, "Persuasion with Large Language Models: A Survey of Empirical Evidence, Study Methodologies, and Ethical Implications," arXiv:2411.06837. <https://arxiv.org/abs/2411.06837>
+- International AI Safety Report 2025, chaired by Yoshua Bengio, authored by over 100 experts, backed by 30 countries and international organisations. Quoted on: the unsettled state of the science; capability as a risk contributor; expert disagreement about scaling and execution reliability; scope excluding benefits. <https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025>
+- Thomas Kwa, Ben West, Joel Becker et al., "Measuring AI Ability to Complete Long Software Tasks," METR, March 2025 — quoted with the authors' own notice that "some of the text and figures in this post are out of date." <https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/>
+- Sander Noels, Alexander Rogiers, Maarten Buyl, Tijl De Bie, "Persuasion with Large Language Models: A Survey of Empirical Evidence, Study Methodologies, and Ethical Implications," arXiv:2411.06837 — cited narrowly, for effectiveness in controlled studies. <https://arxiv.org/abs/2411.06837>
+- Jiacheng Liang, Zian Wang, Lauren Hong, Shouling Ji, Ting Wang, "Watermark under Fire: A Robustness Evaluation of LLM Watermarking," arXiv:2411.13425 (Findings of EMNLP 2025) — WaterPark integrates 10 state-of-the-art watermarkers and 12 representative attacks. <https://arxiv.org/abs/2411.13425>
