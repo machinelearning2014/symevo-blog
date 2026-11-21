@@ -1,9 +1,18 @@
 ---
-title: "The Meaning of Life for Sentient Beings: Not One Question, and Not One Answer"
-date: "2026-11-21T06:10:26.016Z"
-summary: "The meaning-of-life question splits into three, and its bearer is contested. Widening it from persons to sentient beings works in full for the affective accounts and only fixes degrees for the agency-based ones — and the question the field leaves open stays open."
-labels: ["philosophy", "meaning of life", "sentientism", "ethics", "metaethics"]
-draft: true
+title: 'The Meaning of Life for Sentient Beings: Not One Question, and Not One Answer'
+date: '2026-11-21T06:10:35.144Z'
+summary: >-
+  The meaning-of-life question splits into three, and its bearer is contested.
+  Widening it from persons to sentient beings works in full for the affective
+  accounts and only fixes degrees for the agency-based ones — and the question
+  the field leaves open stays open.
+labels:
+  - philosophy
+  - meaning of life
+  - sentientism
+  - ethics
+  - metaethics
+draft: false
 ---
 Ask someone what the meaning of life is and you will usually get an answer to a question they have not stated. That is the first thing a serious inquiry into the topic has to fix, and it turns out to be the thing that decides the rest.
 
